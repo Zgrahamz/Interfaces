@@ -13,13 +13,12 @@ import static java.nio.file.StandardOpenOption.CREATE;
  */
 public class ShortLister
 {
-    static ShortWordFilter filt = new ShortWordFilter();
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args)
     {
+        ShortWordFilter filt = new ShortWordFilter();
         JFileChooser chooser = new JFileChooser();
         File selectedFile;
         String rec = "";
